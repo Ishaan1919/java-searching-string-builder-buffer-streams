@@ -9,7 +9,14 @@ public class WordCount {
             String word = "is";
             String line;
             while((line=br.readLine())!=null){
-                if(line.contains(word)) wordCount++;
+                if(line.contains(word)){
+                    String[] arr = line.split("\\s+");
+                    for(String i:arr) {
+                        if (i.equals(word)) {
+                            wordCount++;
+                        }
+                    }
+                }
             }
             System.out.printf("The count of the word \"%s\" is %d", word,wordCount);
         } catch (IOException e){
