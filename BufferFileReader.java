@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class BufferFileReader {
     public static void main(String[] args) {
-        String filePath = "sample.txt"; // Ensure the file exists in the project directory
+        String filePath = "sample.txt";  // Ensure the file exists in the project directory
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;

@@ -10,7 +10,7 @@ public class WordCount {
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] words = line.split("\\s+");
+                String[] words = line.split("\\s+"); // split the string
                 for (String word : words) {
                     if (word.equalsIgnoreCase(targetWord)) {
                         count++;

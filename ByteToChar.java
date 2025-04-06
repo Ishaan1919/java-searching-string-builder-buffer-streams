@@ -14,8 +14,9 @@ public class ByteToChar {
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
-        } catch (IOException e) {
-            System.out.println("Error reading file: " + e.getMessage());
+        }
+        catch (IOException e) {
+            System.out.println("Error reading file : " + e.getMessage());
         }
     }
 }
